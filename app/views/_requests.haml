@@ -1,10 +1,2 @@
-.table-header
-  .table-header-title
-    %h3 Time Waiting
-  .table-header-title
-    %h3 Customer Name
-  .table-header-title
-    %h3 Request Time
-.table-content
-  - customer_requests.each do |customer_request|
-    = haml :_request, layout: false, locals: { customer_request: customer_request }
+- customer_requests.each do |customer_request|
+  = haml :_request, layout: false, locals: { customer_request: customer_request }

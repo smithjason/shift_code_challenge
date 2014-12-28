@@ -4,4 +4,6 @@ $(document).ready(function(){
   var controller = new Controller(view, api);
 
   controller.bindEventListeners();
+
+  view.$refreshRequestsBtn.trigger('click');
 });

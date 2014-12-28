@@ -19,7 +19,6 @@ function Controller(view, api){
   };
 
   this.updateRequestsList = function(requestsData){
-    console.log('INSIDE Controller#updateRequestsList');
     self.view.renderRequestsList(requestsData);
   };
 }

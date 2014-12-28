@@ -1,6 +1,6 @@
 function View(){
   this.$refreshRequestsBtn = $('.refresh-request-list');
-  this.$requestsContainer = $('.connect-requests');
+  this.$requestsContainer = $('.connect-requests .table-content');
 }
 
 View.prototype = {
