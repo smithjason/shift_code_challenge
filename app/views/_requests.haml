@@ -7,9 +7,4 @@
     %h3 Request Time
 .table-content
   - customer_requests.each do |customer_request|
-    .request-time-waiting
-      %p= customer_request[:minutes_spent_waiting]
-    .request-customer-name
-      %p= customer_request[:name]
-    .request-started-waiting
-      %p= customer_request[:time_started_waiting]
+    = haml :_request, layout: false, locals: { customer_request: customer_request }
