@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";;;;AACE,IAAK;ECQC,kBAAoB,EDPJ,UAAU;ECY1B,eAAiB,EDZD,UAAU;EC2B1B,UAAY,ED3BI,UAAU;;;AAI9B,oBAAqB;ECGjB,kBAAoB,EDFF,OAAO;ECOzB,eAAiB,EDPC,OAAO;ECsBzB,UAAY,EDtBM,OAAO",
+"sources": ["neat/grid/_box-sizing.scss","bourbon/addons/_prefixer.scss"],
 "names": [],
 "file": "application.css"
 }

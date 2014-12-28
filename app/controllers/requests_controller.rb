@@ -1,14 +1,16 @@
 get '/requests' do
   if params[:status]
     requests = Request.includes(:customer).where(status: params[:status])
-    customer_request_data = create_customer_objects_with_request_data(requests)
+    @customer_requests = create_customer_objects_with_request_data(requests)
   else
     requests = Request.all
-    customer_request_data = create_customer_objects_with_request_data(requests)
+    @customer_requests = create_customer_objects_with_request_data(requests)
   end
-
-  content_type :json
-  { customer_requests: customer_request_data }.to_json
+  # content_type :json
+  # { customer_requests: @customer_requests }.to_json
+  haml  :_requests,
+        layout: false,
+        locals: { customer_requests: @customer_requests }
 end
 
 delete '/requests/:id' do
