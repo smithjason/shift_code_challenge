@@ -30,12 +30,13 @@ end
 def create_customer_objects_with_request_data(requests)
   requests.map do |request|
     minutes_spent_waiting = ((Time.now - request.created_at) / 60).to_i
+    request_time = request.created_at.getlocal("-08:00").strftime("%l:%m %p")
 
     {
       name: request.customer.name,
       status: request.status,
       minutes_spent_waiting: minutes_spent_waiting,
-      time_started_waiting: request.created_at
+      time_started_waiting: request_time
     }
   end
 end

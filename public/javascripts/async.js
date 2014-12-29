@@ -1,6 +1,6 @@
-function API(){}
+function Async(){}
 
-API.prototype = {
+Async.prototype = {
   makeRequest: function(options){
     var jqxhr = $.ajax({
       url: options.url,

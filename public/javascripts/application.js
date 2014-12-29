@@ -1,9 +1,8 @@
 $(document).ready(function(){
   var view = new View();
-  var api = new API();
-  var controller = new Controller(view, api);
+  var async = new Async();
+  var controller = new Controller(view, async);
 
   controller.bindEventListeners();
-
   view.$refreshRequestsBtn.trigger('click');
 });

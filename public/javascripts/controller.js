@@ -1,8 +1,7 @@
-function Controller(view, api){
+function Controller(view, async){
   this.view = view;
-  this.api = api;
+  this.async = async;
   var self = this;
-  console.log(self);
 
   this.bindEventListeners = function(){
     $refreshRequestsListBtn = this.view.$refreshRequestsBtn;
@@ -14,7 +13,7 @@ function Controller(view, api){
     e.preventDefault();
     var element = e.currentTarget;
     var options = self.view.getRequestData(element);
-    var ajaxRequest = self.api.makeRequest(options);
+    var ajaxRequest = self.async.makeRequest(options);
     ajaxRequest.done(self.updateRequestsList);
   };
 

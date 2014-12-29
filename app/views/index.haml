@@ -1,14 +1,17 @@
 %header
-  %img.logo{ src:"images/shift-logo@2x.png" }
-.subtitle
-  %h1 Tools
+  %nav
+    %img#shift-logo{ src:"images/shift-logo_2x.png" }
+%section
+  .subtitle
+    %h1 Tools
 .content
-  %h2 Connect Requests
-  %a.refresh-request-list{ href:"/requests?status=waiting" } Refresh
+  .content-header
+    %h2 Connect Requests
+    %a.refresh-request-list{ href:"/requests?status=waiting" } Refresh
   .connect-requests
     .table-header
       .table-header-title
-        %h3 Time Waiting
+        %h3 Minutes Waiting
       .table-header-title
         %h3 Customer Name
       .table-header-title
