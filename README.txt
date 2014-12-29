@@ -32,13 +32,9 @@ POST /customers
 
 DELETE /customers/:id
 
-  Required Parameter: id
-
   Deletes the supplied customer.  Returns a JSON object with the deleted customer's id and their name.
 
 POST /customers/:id/requests
-
-  Required Parameter: id
 
   Creates a new request attached to a customer given their id.  Returns a JSON object with the newly created request's id, the customer's id, and the requst's status.
 
