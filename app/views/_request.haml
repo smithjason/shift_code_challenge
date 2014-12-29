@@ -1,4 +1,4 @@
 %ul
-  %li= customer_request[:minutes_spent_waiting]
-  %li= customer_request[:name]
-  %li= customer_request[:time_started_waiting]
+  %li.name= customer_request[:name]
+  %li.minutes-waiting= customer_request[:minutes_spent_waiting]
+  %li.time-requested= customer_request[:time_requested]

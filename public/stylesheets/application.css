@@ -67,6 +67,7 @@ nav:after {
 
 #shift-logo {
   width: 140px;
+  margin-left: 3em;
 }
 
 section {
@@ -125,7 +126,7 @@ section .subtitle:after {
   display: inline-block;
   float: left;
   padding: 1em 0.8em;
-  margin: 0.5em 0 0 1.8em;
+  margin: 0.6em 0 0 1.8em;
   background-color: #43A3C7;
   color: #fff;
   border-top-left-radius: 5px;
@@ -134,6 +135,9 @@ section .subtitle:after {
   border-bottom-right-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .content .content-header a:hover {
   background-color: #5cb9db;
@@ -189,6 +193,19 @@ section .subtitle:after {
 
 .connect-requests {
   margin: 0.5em 0 0;
+}
+
+.time-ten-plus {
+  color: red;
+  font-weight: bold;
+}
+
+.time-five-to-ten {
+  color: orange;
+}
+
+.time-two-to-five {
+  color: yellow;
 }
 
 /*# sourceMappingURL=application.css.map */

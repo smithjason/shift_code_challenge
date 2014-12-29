@@ -49,6 +49,7 @@ nav {
 
 #shift-logo {
   width: 140px;
+  margin-left: 3em;
 }
 
 section {
@@ -90,13 +91,14 @@ section {
       display: inline-block;
       float: left;
       @include padding(1em 0.8em);
-      @include margin(0.5em 0 0 1.8em);
+      @include margin(0.6em 0 0 1.8em);
       background-color: $button-color;
       color: $white;
       @include border-top-radius(5px);
       @include border-bottom-radius(5px);
       text-transform: uppercase;
       text-decoration: none;
+      @include transition(all 0.2s ease-in-out);
 
       &:hover {
         background-color: $button-color-hover;
@@ -132,6 +134,19 @@ section {
 
 .connect-requests {
   @include margin(0.5em 0 0 0);
+}
+
+.time-ten-plus {
+  color: red;
+  font-weight: bold;
+}
+
+.time-five-to-ten {
+  color: orange;
+}
+
+.time-two-to-five {
+  color: yellow;
 }
 
 
