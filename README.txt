@@ -4,19 +4,44 @@ USAGE
 Follow the below steps to install dependencies, set up the database, and run the service.
 
 In terminal:
-  - Install dependencies, required before initial use of tool.
-      bundle install
-  - Drop, Create, and Migrate the Database.  Required for initial use of tool.  Use when you want to clear the database to start from scratch, use this command.
-      rake db:reset
-  - Given an absolute path to JSON logs, seeds/adds to DB.  Subdirectories of this path will not have their logs used.
-      rake fps:seed_from_path path='some/file/path'
-  - Generate the averages for all Logs currently in the Database.
-      rake fps:generate_fps_averages
-  - Start up server.
-      shotgun
-  - Open browser and go to http://localhost:9393
-      open http://localhost:9393
-  - Use the app!
+  bundle install
+  rake db:reset
+  shotgun
+  open http://localhost:9393
+
+REST ROUTES
+=========================================================
+
+GET /requests
+
+  Optional Parameter: status (waiting, picked up, or closed)
+
+  Returns a rendered partial with name of customer, minutes spent waiting, and time the request was created.
+
+  If you supply a status parameter, the partial will only include requests of that status.
+
+DELETE /requests/:id
+
+  Deletes the supplied request.  Returns a JSON object with the deleted request's id.
+
+POST /customers
+
+  Required Parameter: name
+
+  Creates a new customer with the name supplied.  Returns a JSON object with the newly created customer's id and their name.
+
+DELETE /customers/:id
+
+  Required Parameter: id
+
+  Deletes the supplied customer.  Returns a JSON object with the deleted customer's id and their name.
+
+POST /customers/:id/requests
+
+  Required Parameter: id
+
+  Creates a new request attached to a customer given their id.  Returns a JSON object with the newly created request's id, the customer's id, and the requst's status.
+
 
 WHY RUBY & SINATRA?
 =========================================================

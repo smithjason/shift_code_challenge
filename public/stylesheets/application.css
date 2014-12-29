@@ -30,8 +30,8 @@ h1 {
 }
 
 h2 {
-  display: inline-block;
   margin: 0;
+  display: inline-block;
   color: #323B4C;
   font-size: 1.8em;
   text-transform: uppercase;
@@ -110,9 +110,9 @@ section .subtitle:after {
   clear: both;
 }
 .content h2 {
+  margin: 0.625em 0;
   display: inline-block;
   float: left;
-  margin: 0.625em 0;
 }
 .content .content-header {
   display: block;
@@ -123,21 +123,21 @@ section .subtitle:after {
   clear: both;
 }
 .content .content-header a {
-  display: inline-block;
-  float: left;
   padding: 1em 0.8em;
   margin: 0.6em 0 0 1.8em;
-  background-color: #43A3C7;
-  color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  display: inline-block;
+  float: left;
+  background-color: #43A3C7;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .content .content-header a:hover {
   background-color: #5cb9db;
@@ -180,12 +180,12 @@ section .subtitle:after {
   clear: both;
 }
 .content .table-content ul li {
-  display: inline-block;
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 31.91489%;
   margin: 10px 0;
+  display: inline-block;
 }
 .content .table-content ul li:last-child {
   margin-right: 0;

@@ -10,9 +10,12 @@ function View(){
   };
 
   this.renderRequestsList = function(requestsData){
-    this.$requestsContainer.empty();
+    if (this.$requestsContainer.has("ul").length){
+      this.$requestsContainer.empty();
+    }
     this.$requestsContainer.append(requestsData);
     this.colorizeMinutesWaiting();
+    this.fadeInRequestsList();
   };
 
   this.colorizeMinutesWaiting = function(){
@@ -25,5 +28,9 @@ function View(){
         $(obj).addClass('time-two-to-five');
       }
     });
+  };
+
+  this.fadeInRequestsList = function(){
+    $('.table-content ul').velocity("transition.fadeIn", { stagger: 100, drag: true });
   };
 }

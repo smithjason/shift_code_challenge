@@ -15,6 +15,25 @@ post '/customers' do
   end
 end
 
+delete '/customers/:id' do
+  customer = Customer.find(params[:id])
+  customer_id = customer.id
+  customer_name = customer.name
+
+  if customer
+    customer.destroy
+
+    status 200
+    content_type :json
+    {
+      customer_id: customer_id,
+      customer_name: customer_name
+    }.to_json
+  else
+    status 404
+  end
+end
+
 post '/customers/:id/requests' do
   customer = Customer.find_by_id(params[:id])
 
@@ -37,19 +56,3 @@ post '/customers/:id/requests' do
   end
 end
 
-delete '/customers/:id' do
-  customer = Customer.find(params[:id])
-  customer_id = customer.id
-
-  if customer
-    customer.destroy
-
-    status 200
-    content_type :json
-    {
-      customer_id: customer_id
-    }.to_json
-  else
-    status 404
-  end
-end
