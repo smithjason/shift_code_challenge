@@ -1,8 +1,6 @@
 function View(){
   this.$refreshRequestsBtn = $('.refresh-request-list');
   this.$requestsContainer = $('.connect-requests .table-content');
-  this.$requestsMinutesWaiting = $('.connect-requests .minutes-waiting');
-  var self = this;
 
   this.getRequestData = function(element){
     return {
@@ -19,7 +17,6 @@ function View(){
 
   this.colorizeMinutesWaiting = function(){
     $('.connect-requests .minutes-waiting').each(function(i,obj){
-      console.log('INSIDE each loop');
       if(obj.innerHTML > 10){
         $(obj).addClass('time-ten-plus');
       } else if(obj.innerHTML >= 5){
