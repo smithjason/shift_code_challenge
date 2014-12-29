@@ -1,0 +1,24 @@
+/* CUSTOM FONTS */
+@font-face {
+  font-family: 'ProximaNovaCond-Light';
+  font-weight: lighter;
+  font-style: normal;
+  src: url("../fonts/ProximaNovaCond-Light.eot");
+  src: url("../fonts/ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Light.woff") format("woff"), url("../fonts/ProximaNovaCond-Light.ttf") format("truetype"), url("../fonts/ProximaNovaCond-Light.svg#ProximaNovaCond") format("svg");
+}
+@font-face {
+  font-family: 'ProximaNovaCond-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ProximaNovaCond-Regular.eot");
+  src: url("../fonts/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNovaCond-Regular.ttf") format("truetype"), url("../fonts/ProximaNovaCond-Regular.svg#ProximaNovaCond") format("svg");
+}
+@font-face {
+  font-family: 'BebasNeue';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/bebasneue-webfont.eot");
+  src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#BebasNeue") format("svg");
+}
+
+/*# sourceMappingURL=fonts.css.map */

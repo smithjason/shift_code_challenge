@@ -1,0 +1,137 @@
+/*  COLORS */
+$brand-primary-color: #494d55;
+$brand-secondary-color: #CCD6DD;
+$black: #000;
+$grey: #565a5c;
+$greyer: #323B4C;
+$white: #fff;
+$button-color: #43A3C7;
+$button-color-hover: #5cb9db;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: $helvetica;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  display: inline-block;
+  @include margin(0);
+  color: $greyer;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+p {
+  @include margin(0);
+}
+
+header {
+  @include position(fixed, 0);
+  @include padding(1.25em 0em 0em 0em);
+  width: 100%;
+  background-color: rgba($brand-primary-color, 0.7);
+  max-height: 4.2em;
+  z-index: 100;
+}
+
+nav {
+  @include outer-container;
+}
+
+#shift-logo {
+  width: 140px;
+}
+
+section {
+  @include padding(1.8em 0em);
+  @include background-image(url("../../images/tesla-rear-three-quarter.jpg"));
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 12.5em;
+  text-align: center;
+
+  .subtitle {
+    @include outer-container;
+    @include margin(2.8em 0 0 0);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.content {
+  @include padding(50px 50px);
+  @include outer-container;
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+    float: left;
+    @include margin(.625em 0);
+
+  }
+
+  .content-header {
+    @include row();
+
+    a {
+      display: inline-block;
+      float: left;
+      @include padding(1em 0.8em);
+      @include margin(0.5em 0 0 1.8em);
+      background-color: $button-color;
+      color: $white;
+      @include border-top-radius(5px);
+      @include border-bottom-radius(5px);
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $button-color-hover;
+      }
+    }
+  }
+
+  .table-header {
+    @include row();
+    .table-header-title {
+      @include span-columns(4);
+      @include margin(0);
+    }
+  }
+
+  .table-content {
+    @include row();
+
+    ul {
+      @include margin(0);
+      @include padding(0);
+      @include row();
+      list-style: none;
+
+      li {
+        display: inline-block;
+        @include span-columns(4);
+        @include margin(10px 0 10px 0);
+      }
+    }
+  }
+}
+
+.connect-requests {
+  @include margin(0.5em 0 0 0);
+}
+
+

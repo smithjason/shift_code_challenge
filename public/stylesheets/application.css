@@ -14,4 +14,181 @@ html {
   box-sizing: inherit;
 }
 
+/*  COLORS */
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0;
+  color: #323B4C;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25em 0 0;
+  width: 100%;
+  background-color: rgba(73, 77, 85, 0.7);
+  max-height: 4.2em;
+  z-index: 100;
+}
+
+nav {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#shift-logo {
+  width: 140px;
+}
+
+section {
+  padding: 1.8em 0;
+  background-image: url("../../images/tesla-rear-three-quarter.jpg");
+  background-image: url("../../images/tesla-rear-three-quarter.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 12.5em;
+  text-align: center;
+}
+section .subtitle {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2.8em 0 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+section .subtitle:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  padding: 50px;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content h2 {
+  display: inline-block;
+  float: left;
+  margin: 0.625em 0;
+}
+.content .content-header {
+  display: block;
+}
+.content .content-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content .content-header a {
+  display: inline-block;
+  float: left;
+  padding: 1em 0.8em;
+  margin: 0.5em 0 0 1.8em;
+  background-color: #43A3C7;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.content .content-header a:hover {
+  background-color: #5cb9db;
+}
+.content .table-header {
+  display: block;
+}
+.content .table-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content .table-header .table-header-title {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  margin: 0;
+}
+.content .table-header .table-header-title:last-child {
+  margin-right: 0;
+}
+.content .table-content {
+  display: block;
+}
+.content .table-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content .table-content ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+.content .table-content ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content .table-content ul li {
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  margin: 10px 0;
+}
+.content .table-content ul li:last-child {
+  margin-right: 0;
+}
+
+.connect-requests {
+  margin: 0.5em 0 0;
+}
+
 /*# sourceMappingURL=application.css.map */
