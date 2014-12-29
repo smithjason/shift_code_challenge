@@ -5,6 +5,8 @@ $black: #000;
 $grey: #565a5c;
 $greyer: #323B4C;
 $white: #fff;
+$yellow: #c9b414;
+$orange: #f97800;
 $button-color: #43A3C7;
 $button-color-hover: #5cb9db;
 
@@ -142,11 +144,11 @@ section {
 }
 
 .time-five-to-ten {
-  color: orange;
+  color: $orange;
 }
 
 .time-two-to-five {
-  color: yellow;
+  color: $yellow;
 }
 
 
