@@ -21,6 +21,10 @@ GET /requests
   Returns a rendered partial with name of customer, minutes spent waiting, and time the request was created.
 
   If you supply a status parameter, the partial will only include requests of that status.
+  
+  Please note: requests can only be updated to 'picked up' or 'closed' via 'rake console'.
+  REST route for updating a status has not been implemented because it was not part of the challenge.
+  If you want me to implement this route, please let me know.
 
 DELETE /requests/:id
 
