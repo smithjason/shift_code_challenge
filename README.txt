@@ -9,7 +9,7 @@ In terminal:
   shotgun
   open http://localhost:9393
   
-Optionally, you can 'rake db:reset' if you would like to seed the database with Customers and Requests.  Their created at time will, however, all be the same.
+Optionally, you can 'rake db:seed' if you would like to seed the database with Customers and Requests.  Their created at time will, however, all be the same.
 
 REST ROUTES
 =========================================================
