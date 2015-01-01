@@ -61,11 +61,6 @@ header {
   max-height: 4.2em;
   z-index: 100;
 
-  &:hover {
-    background-color: rgba($brand-primary-color, 1);
-    @include transition(opacity 0.2s ease-in);
-  }
-
   @include media($mobile){
     background-color: rgba($brand-primary-color, 1);
   }
@@ -121,7 +116,6 @@ section {
 
 .content-header {
   @include row();
-  // border-bottom: 1px solid $light-grey;
 }
 
 a {

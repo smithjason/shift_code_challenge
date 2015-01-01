@@ -68,12 +68,6 @@ header {
   max-height: 4.2em;
   z-index: 100;
 }
-header:hover {
-  background-color: #494d55;
-  -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
-}
 @media screen and (max-width: 514px) {
   header {
     background-color: #494d55;
