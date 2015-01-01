@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$helvetica".
-        on line 29 of ./public/stylesheets/sass/custom.scss
+        on line 23 of ./public/stylesheets/sass/custom.scss
 
-24:   height: 100%;
-25: }
-26: 
-27: body {
-28:   -webkit-font-smoothing: antialiased;
-29:   font-family: $helvetica;
-30:   font-weight: normal;
-31:   color: $brand-primary-color;
-32: }
-33: 
-34: h1 {
+18:   height: 100%;
+19: }
+20: 
+21: body {
+22:   -webkit-font-smoothing: antialiased;
+23:   font-family: $helvetica;
+24:   font-weight: normal;
+25:   color: $brand-primary-color;
+26: }
+27: 
+28: h1 {
 
 Backtrace:
-./public/stylesheets/sass/custom.scss:29
+./public/stylesheets/sass/custom.scss:23
 /Users/jasonsmith/.rvm/gems/ruby-2.1.3/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/jasonsmith/.rvm/gems/ruby-2.1.3/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/jasonsmith/.rvm/gems/ruby-2.1.3/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -88,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$helvetica\".\A         on line 29 of ./public/stylesheets/sass/custom.scss\A \A 24:   height: 100%;\A 25: }\A 26: \A 27: body {\A 28:   -webkit-font-smoothing: antialiased;\A 29:   font-family: $helvetica;\A 30:   font-weight: normal;\A 31:   color: $brand-primary-color;\A 32: }\A 33: \A 34: h1 {"; }
+  content: "Error: Undefined variable: \"$helvetica\".\A         on line 23 of ./public/stylesheets/sass/custom.scss\A \A 18:   height: 100%;\A 19: }\A 20: \A 21: body {\A 22:   -webkit-font-smoothing: antialiased;\A 23:   font-family: $helvetica;\A 24:   font-weight: normal;\A 25:   color: $brand-primary-color;\A 26: }\A 27: \A 28: h1 {"; }
