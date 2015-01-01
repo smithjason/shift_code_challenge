@@ -11,6 +11,10 @@ $button-color: #43A3C7;
 $button-color-hover: #5cb9db;
 $list-color-hover: #f2f2f2;
 
+/* IMAGES URLS */
+
+$background-image-tesla-rear: "../../images/tesla-rear-three-quarter.jpg";
+
 html, body {
   height: 100%;
 }
@@ -58,7 +62,7 @@ nav {
 
 section {
   @include padding(1.8em 0em);
-  @include background-image(url("../../images/tesla-rear-three-quarter.jpg"));
+  @include background-image(url($background-image-tesla-rear));
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
