@@ -1,6 +1,7 @@
 /*  COLORS */
 $brand-primary-color: #494d55;
 $grey: #323B4C;
+$light-grey: #EEE;
 $black: #000;
 $white: #fff;
 $yellow: #c9b414;
@@ -27,6 +28,7 @@ body {
 
 h1 {
   margin: 0;
+  font-size: 2.75em;
 }
 
 h2 {
@@ -35,11 +37,16 @@ h2 {
   float: left;
   color: $grey;
   font-size: 1.8em;
-  text-transform: uppercase;
+  font-weight: 300;
 
   @include media($mobile){
     float: none;
   }
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 p {
@@ -53,6 +60,11 @@ header {
   background-color: rgba($brand-primary-color, 0.7);
   max-height: 4.2em;
   z-index: 100;
+
+  &:hover {
+    background-color: rgba($brand-primary-color, 1);
+    @include transition(opacity 0.2s ease-in);
+  }
 
   @include media($mobile){
     background-color: rgba($brand-primary-color, 1);
@@ -80,7 +92,7 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
-  height: 12.5em;
+  height: 18em;
   text-align: center;
 
   @include media($mobile){
@@ -90,7 +102,7 @@ section {
 
 .subtitle {
   @include outer-container;
-  @include margin(2.8em 0 0 0);
+  @include margin(4.3em 0 0 0);
   font-size: 1.5em;
   text-transform: uppercase;
   color: $white;
@@ -109,11 +121,12 @@ section {
 
 .content-header {
   @include row();
+  // border-bottom: 1px solid $light-grey;
 }
 
 a {
-  @include padding(0.275em 0.85em);
-  @include margin(1.95em 0 0 1.8em);
+  @include padding(0.4em 0.85em);
+  @include margin(2.65em 0 0 1.8em);
   @include border-top-radius(em(5));
   @include border-bottom-radius(em(5));
   @include transition(all 0.2s ease-in-out);
@@ -121,7 +134,7 @@ a {
   float: left;
   background-color: $button-color;
   color: $white;
-  font-size: 0.8em;
+  font-size: 0.65em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -136,11 +149,14 @@ a {
     float: none;
     display: inline-block;
     width: 80%;
+    font-size: 0.85em;
   }
 }
 
 .table-header {
   @include row();
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
 }
 
 .table-header-title {
@@ -169,6 +185,7 @@ li {
   @include span-columns(4);
   @include margin(em(10) 0);
   display: inline-block;
+  font-size: 0.9em;
 }
 
 .connect-requests {
@@ -177,7 +194,7 @@ li {
 
 .time-ten-plus {
   color: red;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .time-five-to-ten {

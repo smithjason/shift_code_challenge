@@ -30,6 +30,7 @@ body {
 
 h1 {
   margin: 0;
+  font-size: 2.75em;
 }
 
 h2 {
@@ -38,12 +39,17 @@ h2 {
   float: left;
   color: #323B4C;
   font-size: 1.8em;
-  text-transform: uppercase;
+  font-weight: 300;
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 514px) {
   h2 {
     float: none;
   }
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 p {
@@ -62,7 +68,13 @@ header {
   max-height: 4.2em;
   z-index: 100;
 }
-@media screen and (max-width: 510px) {
+header:hover {
+  background-color: #494d55;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+@media screen and (max-width: 514px) {
   header {
     background-color: #494d55;
   }
@@ -78,7 +90,7 @@ nav:after {
   display: table;
   clear: both;
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 514px) {
   nav {
     margin-left: 21.2766%;
   }
@@ -98,10 +110,10 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
-  height: 12.5em;
+  height: 18em;
   text-align: center;
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 514px) {
   section {
     display: none;
   }
@@ -111,7 +123,7 @@ section {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  margin: 2.8em 0 0;
+  margin: 4.3em 0 0;
   font-size: 1.5em;
   text-transform: uppercase;
   color: #fff;
@@ -134,7 +146,7 @@ section {
   display: table;
   clear: both;
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 514px) {
   .content {
     margin: 5em 0 0;
     padding: 0.5em;
@@ -151,8 +163,8 @@ section {
 }
 
 a {
-  padding: 0.275em 0.85em;
-  margin: 1.95em 0 0 1.8em;
+  padding: 0.4em 0.85em;
+  margin: 2.65em 0 0 1.8em;
   border-top-left-radius: 0.3125em;
   border-top-right-radius: 0.3125em;
   border-bottom-left-radius: 0.3125em;
@@ -164,7 +176,7 @@ a {
   float: left;
   background-color: #43A3C7;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.65em;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -172,18 +184,21 @@ a {
 a:hover {
   background-color: #5cb9db;
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 514px) {
   a {
     margin: 2em 0;
     padding: 1.5em;
     float: none;
     display: inline-block;
     width: 80%;
+    font-size: 0.85em;
   }
 }
 
 .table-header {
   display: block;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
 }
 .table-header:after {
   content: "";
@@ -237,6 +252,7 @@ li {
   width: 31.91489%;
   margin: 0.625em 0;
   display: inline-block;
+  font-size: 0.9em;
 }
 li:last-child {
   margin-right: 0;
@@ -248,7 +264,7 @@ li:last-child {
 
 .time-ten-plus {
   color: red;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .time-five-to-ten {
