@@ -139,10 +139,11 @@ a {
 
 .table-header {
   @include row();
-  .table-header-title {
-    @include span-columns(4);
-    @include margin(0);
-  }
+}
+
+.table-header-title {
+  @include span-columns(4);
+  @include margin(0);
 }
 
 .table-content {

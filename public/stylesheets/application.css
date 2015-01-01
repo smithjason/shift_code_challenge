@@ -188,14 +188,15 @@ a:hover {
   display: table;
   clear: both;
 }
-.table-header .table-header-title {
+
+.table-header-title {
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 31.91489%;
   margin: 0;
 }
-.table-header .table-header-title:last-child {
+.table-header-title:last-child {
   margin-right: 0;
 }
 
