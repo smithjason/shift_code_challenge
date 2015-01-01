@@ -42,7 +42,7 @@ DELETE /customers/:id
 
 POST /customers/:id/requests
 
-  Creates a new request attached to a customer given their id.  Returns a JSON object with the newly created request's id, the customer's id, and the requst's status.
+  Creates a new request attached to a customer given their id.  Returns a JSON object with the newly created request's id, the customer's id, and the request's status.
 
 
 WHY RUBY & SINATRA?
