@@ -5,7 +5,6 @@ function Controller(view, async){
 
   this.bindEventListeners = function(){
     $refreshRequestsListBtn = this.view.$refreshRequestsBtn;
-
     $refreshRequestsListBtn.on('click', this.refreshRequestsListHandler);
   };
 

@@ -1,9 +1,7 @@
 /*  COLORS */
 $brand-primary-color: #494d55;
-$brand-secondary-color: #CCD6DD;
+$grey: #323B4C;
 $black: #000;
-$grey: #565a5c;
-$greyer: #323B4C;
 $white: #fff;
 $yellow: #c9b414;
 $orange: #f97800;
@@ -11,8 +9,7 @@ $button-color: #43A3C7;
 $button-color-hover: #5cb9db;
 $list-color-hover: #f2f2f2;
 
-/* IMAGES URLS */
-
+/* IMAGES PATHS */
 $background-image-tesla-rear: "../../images/tesla-rear-three-quarter.jpg";
 
 /* PAGE STYLING */
@@ -25,6 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: $helvetica;
   font-weight: normal;
+  color: $brand-primary-color;
 }
 
 h1 {
@@ -35,7 +33,7 @@ h2 {
   @include margin(.625em 0);
   display: inline-block;
   float: left;
-  color: $greyer;
+  color: $grey;
   font-size: 1.8em;
   text-transform: uppercase;
 
@@ -55,6 +53,10 @@ header {
   background-color: rgba($brand-primary-color, 0.7);
   max-height: 4.2em;
   z-index: 100;
+
+  @include media($mobile){
+    background-color: rgba($brand-primary-color, 1);
+  }
 }
 
 nav {
@@ -66,7 +68,7 @@ nav {
 }
 
 #shift-logo {
-  width: 140px;
+  width: em(140);
   margin-left: 3em;
 }
 
@@ -80,6 +82,10 @@ section {
   overflow: hidden;
   height: 12.5em;
   text-align: center;
+
+  @include media($mobile){
+    display: none;
+  }
 }
 
 .subtitle {
@@ -91,9 +97,13 @@ section {
 }
 
 .content {
-  @include padding(50px 50px);
+  @include padding(em(50));
   @include outer-container;
   text-align: center;
+
+  @include media($mobile){
+    @include margin(3em 0 0 0);
+  }
 }
 
 .content-header {
@@ -103,8 +113,8 @@ section {
 a {
   @include padding(0.275em 0.85em);
   @include margin(1.95em 0 0 1.8em);
-  @include border-top-radius(5px);
-  @include border-bottom-radius(5px);
+  @include border-top-radius(em(5));
+  @include border-bottom-radius(em(5));
   @include transition(all 0.2s ease-in-out);
   display: inline-block;
   float: left;
@@ -146,15 +156,15 @@ ul {
   list-style: none;
 
   &:hover {
+    @include transition(all 0.25s ease-in-out);
     background-color: $list-color-hover;
     border-radius: 0.125em;
-    @include transition(all 0.25s ease-in-out);
   }
 }
 
 li {
   @include span-columns(4);
-  @include margin(10px 0 10px 0);
+  @include margin(em(10) 0);
   display: inline-block;
 }
 

@@ -1,4 +1,4 @@
-function Async(){}
+function Async(){};
 
 Async.prototype = {
   makeRequest: function(options){
