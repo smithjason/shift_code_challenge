@@ -127,12 +127,12 @@ ul {
     border-radius: 0.125em;
     @include transition(all 0.25s ease-in-out);
   }
+}
 
-  li {
-    @include span-columns(4);
-    @include margin(10px 0 10px 0);
-    display: inline-block;
-  }
+li {
+  @include span-columns(4);
+  @include margin(10px 0 10px 0);
+  display: inline-block;
 }
 
 .connect-requests {
@@ -151,5 +151,3 @@ ul {
 .time-two-to-five {
   color: $yellow;
 }
-
-

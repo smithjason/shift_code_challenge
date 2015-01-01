@@ -188,7 +188,8 @@ ul:hover {
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-ul li {
+
+li {
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -196,7 +197,7 @@ ul li {
   margin: 10px 0;
   display: inline-block;
 }
-ul li:last-child {
+li:last-child {
   margin-right: 0;
 }
 
