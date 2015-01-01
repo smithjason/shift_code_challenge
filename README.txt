@@ -8,6 +8,8 @@ In terminal:
   rake db:reset
   shotgun
   open http://localhost:9393
+  
+Optionally, you can 'rake db:seed' if you would like to seed the database with Customers and Requests.  Their created at time will, however, all be the same.
 
 REST ROUTES
 =========================================================
@@ -19,6 +21,10 @@ GET /requests
   Returns a rendered partial with name of customer, minutes spent waiting, and time the request was created.
 
   If you supply a status parameter, the partial will only include requests of that status.
+  
+  Please note: requests can only be updated to 'picked up' or 'closed' via 'rake console'.
+  REST route for updating a status has not been implemented because it was not part of the challenge.
+  If you want me to implement this route, please let me know.
 
 DELETE /requests/:id
 
@@ -32,13 +38,9 @@ POST /customers
 
 DELETE /customers/:id
 
-  Required Parameter: id
-
   Deletes the supplied customer.  Returns a JSON object with the deleted customer's id and their name.
 
 POST /customers/:id/requests
-
-  Required Parameter: id
 
   Creates a new request attached to a customer given their id.  Returns a JSON object with the newly created request's id, the customer's id, and the requst's status.
 
