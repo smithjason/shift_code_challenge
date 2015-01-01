@@ -15,6 +15,8 @@ $list-color-hover: #f2f2f2;
 
 $background-image-tesla-rear: "../../images/tesla-rear-three-quarter.jpg";
 
+/* PAGE STYLING */
+
 html, body {
   height: 100%;
 }
@@ -36,6 +38,10 @@ h2 {
   color: $greyer;
   font-size: 1.8em;
   text-transform: uppercase;
+
+  @include media($mobile){
+    float: none;
+  }
 }
 
 p {
@@ -53,6 +59,10 @@ header {
 
 nav {
   @include outer-container;
+
+  @include media($mobile){
+    @include shift(2.5);
+  }
 }
 
 #shift-logo {
@@ -91,8 +101,8 @@ section {
 }
 
 a {
-  @include padding(1em 0.8em);
-  @include margin(0.6em 0 0 1.8em);
+  @include padding(0.275em 0.85em);
+  @include margin(1.95em 0 0 1.8em);
   @include border-top-radius(5px);
   @include border-bottom-radius(5px);
   @include transition(all 0.2s ease-in-out);
@@ -100,11 +110,20 @@ a {
   float: left;
   background-color: $button-color;
   color: $white;
+  font-size: 0.8em;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
     background-color: $button-color-hover;
+  }
+
+  @include media($mobile){
+    @include margin(2em 0em);
+    @include padding(1.5em);
+    float: none;
+    display: block;
   }
 }
 
@@ -121,9 +140,9 @@ a {
 }
 
 ul {
+  @include row();
   @include margin(0);
   @include padding(0);
-  @include row();
   list-style: none;
 
   &:hover {
