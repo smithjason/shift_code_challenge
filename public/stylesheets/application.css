@@ -30,8 +30,9 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin: 0.625em 0;
   display: inline-block;
+  float: left;
   color: #323B4C;
   font-size: 1.8em;
   text-transform: uppercase;
@@ -82,7 +83,8 @@ section {
   height: 12.5em;
   text-align: center;
 }
-section .subtitle {
+
+.subtitle {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
@@ -91,7 +93,7 @@ section .subtitle {
   text-transform: uppercase;
   color: #fff;
 }
-section .subtitle:after {
+.subtitle:after {
   content: "";
   display: table;
   clear: both;
@@ -109,20 +111,17 @@ section .subtitle:after {
   display: table;
   clear: both;
 }
-.content h2 {
-  margin: 0.625em 0;
-  display: inline-block;
-  float: left;
-}
-.content .content-header {
+
+.content-header {
   display: block;
 }
-.content .content-header:after {
+.content-header:after {
   content: "";
   display: table;
   clear: both;
 }
-.content .content-header a {
+
+a {
   padding: 1em 0.8em;
   margin: 0.6em 0 0 1.8em;
   border-top-left-radius: 5px;
@@ -139,51 +138,57 @@ section .subtitle:after {
   text-transform: uppercase;
   text-decoration: none;
 }
-.content .content-header a:hover {
+a:hover {
   background-color: #5cb9db;
 }
-.content .table-header {
+
+.table-header {
   display: block;
 }
-.content .table-header:after {
+.table-header:after {
   content: "";
   display: table;
   clear: both;
 }
-.content .table-header .table-header-title {
+.table-header .table-header-title {
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 31.91489%;
   margin: 0;
 }
-.content .table-header .table-header-title:last-child {
+.table-header .table-header-title:last-child {
   margin-right: 0;
 }
-.content .table-content {
+
+.table-content {
   display: block;
 }
-.content .table-content:after {
+.table-content:after {
   content: "";
   display: table;
   clear: both;
 }
-.content .table-content ul {
+
+ul {
   margin: 0;
   padding: 0;
   display: block;
   list-style: none;
 }
-.content .table-content ul:after {
+ul:after {
   content: "";
   display: table;
   clear: both;
 }
-.content .table-content ul:hover {
+ul:hover {
   background-color: #f2f2f2;
   border-radius: 0.125em;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
-.content .table-content ul li {
+ul li {
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -191,7 +196,7 @@ section .subtitle:after {
   margin: 10px 0;
   display: inline-block;
 }
-.content .table-content ul li:last-child {
+ul li:last-child {
   margin-right: 0;
 }
 

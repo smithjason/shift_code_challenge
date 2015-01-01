@@ -26,8 +26,9 @@ h1 {
 }
 
 h2 {
-  @include margin(0);
+  @include margin(.625em 0);
   display: inline-block;
+  float: left;
   color: $greyer;
   font-size: 1.8em;
   text-transform: uppercase;
@@ -65,78 +66,72 @@ section {
   overflow: hidden;
   height: 12.5em;
   text-align: center;
+}
 
-  .subtitle {
-    @include outer-container;
-    @include margin(2.8em 0 0 0);
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color: $white;
-  }
+.subtitle {
+  @include outer-container;
+  @include margin(2.8em 0 0 0);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $white;
 }
 
 .content {
   @include padding(50px 50px);
   @include outer-container;
   text-align: center;
+}
 
-  h2 {
-    @include margin(.625em 0);
+.content-header {
+  @include row();
+}
+
+a {
+  @include padding(1em 0.8em);
+  @include margin(0.6em 0 0 1.8em);
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include transition(all 0.2s ease-in-out);
+  display: inline-block;
+  float: left;
+  background-color: $button-color;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+
+.table-header {
+  @include row();
+  .table-header-title {
+    @include span-columns(4);
+    @include margin(0);
+  }
+}
+
+.table-content {
+  @include row();
+}
+
+ul {
+  @include margin(0);
+  @include padding(0);
+  @include row();
+  list-style: none;
+
+  &:hover {
+    background-color: $list-color-hover;
+    border-radius: 0.125em;
+    @include transition(all 0.25s ease-in-out);
+  }
+
+  li {
+    @include span-columns(4);
+    @include margin(10px 0 10px 0);
     display: inline-block;
-    float: left;
-
-  }
-
-  .content-header {
-    @include row();
-
-    a {
-      @include padding(1em 0.8em);
-      @include margin(0.6em 0 0 1.8em);
-      @include border-top-radius(5px);
-      @include border-bottom-radius(5px);
-      @include transition(all 0.2s ease-in-out);
-      display: inline-block;
-      float: left;
-      background-color: $button-color;
-      color: $white;
-      text-transform: uppercase;
-      text-decoration: none;
-
-      &:hover {
-        background-color: $button-color-hover;
-      }
-    }
-  }
-
-  .table-header {
-    @include row();
-    .table-header-title {
-      @include span-columns(4);
-      @include margin(0);
-    }
-  }
-
-  .table-content {
-    @include row();
-
-    ul {
-      @include margin(0);
-      @include padding(0);
-      @include row();
-      list-style: none;
-
-      &:hover {
-        background-color: $list-color-hover;
-        border-radius: 0.125em;
-      }
-
-      li {
-        @include span-columns(4);
-        @include margin(10px 0 10px 0);
-        display: inline-block;
-      }
-    }
   }
 }
 
