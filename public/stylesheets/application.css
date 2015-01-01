@@ -179,6 +179,10 @@ section .subtitle:after {
   display: table;
   clear: both;
 }
+.content .table-content ul:hover {
+  background-color: #f2f2f2;
+  border-radius: 0.125em;
+}
 .content .table-content ul li {
   float: left;
   display: block;

@@ -9,6 +9,7 @@ $yellow: #c9b414;
 $orange: #f97800;
 $button-color: #43A3C7;
 $button-color-hover: #5cb9db;
+$list-color-hover: #f2f2f2;
 
 html, body {
   height: 100%;
@@ -124,6 +125,11 @@ section {
       @include padding(0);
       @include row();
       list-style: none;
+
+      &:hover {
+        background-color: $list-color-hover;
+        border-radius: 0.125em;
+      }
 
       li {
         @include span-columns(4);
