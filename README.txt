@@ -7,9 +7,16 @@ In terminal:
   bundle install
   rake db:reset
   shotgun
-  open http://localhost:9393
+  open http://localhost:9393 
+    (or whichever port you started shotgun up with)
   
 Use the 2 routes, POST /customers & POST /customers/:id/requests, to create customer requests.
+
+Example Usage in Terminal:
+  - curl -X POST http://localhost:9393/customers?name=Jason
+    response => {"customer_id":1, "customer_name":"Jason"}
+  - curl -X POST http://localhost:9393/customers/1/requests
+    response => {"request_id":9,"customer_id":1,"request_status":"waiting"}
   
 Optionally, you can 'rake db:seed' if you would like to seed the database with Customers and Requests.  Their created at time will, however, all be the same.
 
