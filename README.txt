@@ -14,7 +14,7 @@ Use the 2 routes, POST /customers & POST /customers/:id/requests, to create cust
 
 Example Usage in Terminal:
   - curl -X POST http://localhost:9393/customers?name=Jason
-    response => {"customer_id":"1", "customer_name":"Jason"}
+    response => {"customer_id":1, "customer_name":"Jason"}
   - curl -X POST http://localhost:9393/customers/1/requests
     response => {"request_id":9,"customer_id":1,"request_status":"waiting"}
   
