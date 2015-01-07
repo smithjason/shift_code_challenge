@@ -58,7 +58,7 @@ header {
   @include padding(1.25em 0em 0em 0em);
   width: 100%;
   background-color: rgba($brand-primary-color, 0.7);
-  max-height: 4.2em;
+  max-height: 3.2em;
   z-index: 100;
 
   @include media($mobile){
